@@ -1,0 +1,140 @@
+html {
+	background: #c8e6f3;
+}
+
+@font-face{
+ font-family: 'calc-font';
+ src: url('digital-7.regular.ttf');
+ }
+
+@font-face{
+	font-family: 'retro-future';
+	src: url('chintzy-cpu.brk.ttf');
+}
+
+.calc-body {
+	width: 320px;
+	height: 380px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	background-color: #76bdbf;
+}
+
+.calc-shadow {
+	width: 300px;
+	height: 17px;
+	background-color: white;
+	margin-left: 5px;
+	transform: skewX(30deg);
+	position: absolute;
+}
+
+.calc-shadow2 {
+	width: 300px;
+	height: 17px;
+	margin-left: 15px;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+	transform: skewX(-30deg);
+}
+
+.calc-forehead {
+	width: 300px;
+	height: 100px;
+	background-color: #9dcad0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	font-family: 'retro-future';
+	font-size: 20px;
+	color: orange;
+}
+
+.calc-command-space {
+	width: 300px;
+	height: 270px;
+	background-color: #f8fed6;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+
+.display {
+	width: 260px;
+	height: 45px;
+	border-radius: 3px;
+	background-color: #c6b597;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	
+}
+
+.keys {
+	width: 260px;
+	height: 190px;
+	/*background-color: white;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.nums {
+	font-family: 'calc-font';
+	font-size: 40px;
+	margin: 0;
+	margin-top: 5px;
+	float: right;
+}
+
+.btn-space {
+	width: 20%;
+	height: 25%;
+	display: inline-block;
+}
+
+.btn-space-equal {
+	height: 60%;
+	float: right;
+}
+
+.button {
+	display: block;
+	height: 34px ;
+	width:	34px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #464646;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0px 5px 0px #a1a193;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.2s;
+  /*font-family: 'retro-future';*/
+}
+
+.button:active {
+	box-shadow: 0 3px 0 #a1a193;
+  top: 3px;
+
+}
+
+.equal {
+	background-color: #db7911;
+	height: 130px;
+}
+
+
+.operands {
+	background-color: #ad1720;
+}
+
+.operands:active {
+
+}
