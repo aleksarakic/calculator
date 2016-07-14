@@ -2,16 +2,6 @@ html {
 	background: #c8e6f3;
 }
 
-@font-face{
- font-family: 'calc-font';
- src: url('digital-7.regular.ttf');
- }
-
-@font-face{
-	font-family: 'retro-future';
-	src: url('chintzy-cpu.brk.ttf');
-}
-
 .calc-body {
 	width: 320px;
 	height: 380px;
@@ -23,21 +13,21 @@ html {
 
 .calc-shadow {
 	width: 300px;
-	height: 17px;
-	background-color: white;
+	height: 12px;
+	background-color: #96e3db;
 	margin-left: 5px;
-	transform: skewX(30deg);
+	transform: skewX(40deg);
 	position: absolute;
 }
 
 .calc-shadow2 {
 	width: 300px;
-	height: 17px;
+	height: 12px;
 	margin-left: 15px;
-	background-color: white;
+	background-color: #96e3db;
 	position: absolute;
 	z-index: 1;
-	transform: skewX(-30deg);
+	transform: skewX(-40deg);
 }
 
 .calc-forehead {
@@ -48,10 +38,12 @@ html {
 	margin-right: auto;
 }
 
-.logo {
-	font-family: 'retro-future';
-	font-size: 20px;
-	color: orange;
+.logo img {
+	width: 50px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 5px;
+	transform: rotate(30deg);
 }
 
 .calc-command-space {
@@ -71,23 +63,21 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
-	
+	overflow: hidden;
 }
 
 .keys {
 	width: 260px;
 	height: 190px;
-	/*background-color: white;*/
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
 }
 
 .nums {
-	font-family: 'calc-font';
+	font-family: 'Geo';
 	font-size: 40px;
 	margin: 0;
-	margin-top: 5px;
 	float: right;
 }
 
@@ -116,13 +106,11 @@ html {
   position: relative;
   top: 0px;
   transition: all ease 0.2s;
-  /*font-family: 'retro-future';*/
 }
 
 .button:active {
 	box-shadow: 0 3px 0 #a1a193;
   top: 3px;
-
 }
 
 .equal {
@@ -130,11 +118,6 @@ html {
 	height: 130px;
 }
 
-
 .operands {
 	background-color: #ad1720;
-}
-
-.operands:active {
-
 }

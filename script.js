@@ -2,8 +2,10 @@ $(document).ready(function(){
 	$('.button').click(function clicking(){
 		$('.nums').append($(this).attr('value'));
 		if($('.nums').text().length > 12){
-			$('.nums').css('font-size', '30px');
-		};
+			$('.nums').css('font-size', '28px');
+		}else{
+			$('.nums').css('font-size', '40px');
+		}
 	});
 
 	$('.clear').click(function clearing(){
@@ -15,7 +17,7 @@ $(document).ready(function(){
 		$('.nums').empty();
 		$('.nums').append(eval(value));
 		if($('.nums').text().length > 12){
-			$('.nums').css('font-size', '30px');
+			$('.nums').css('font-size', '28px');
 		};
 	});
 });
